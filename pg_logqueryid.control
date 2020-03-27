@@ -1,0 +1,5 @@
+# log_queryid postgresql extension
+comment = 'log pg_stat_statements queryid if auto_explain is enabled'
+default_version = '0.0.1'
+module_pathname = '$libdir/pglqi'
+relocatable = false
