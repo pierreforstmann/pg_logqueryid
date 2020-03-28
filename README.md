@@ -7,10 +7,10 @@ PostgreSQL extension to display pg_stat_statements queryid with auto_explain
 
 This module can be built using the standard PGXS infrastructure. For this to work, the pg_config program must be available in your $PATH:
   
-`git clone https://github.com/pierreforstmann/pg_logqueryid.git <br>
-cd pg_logqueryid <br>
-make <br>
-make install <br>
+`git clone https://github.com/pierreforstmann/pg_logqueryid.git` <br>
+`cd pg_logqueryid` <br>
+`make` <br>
+`make install` <br>
 `
 ## PostgreSQL setup
 
