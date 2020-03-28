@@ -16,7 +16,7 @@ This module can be built using the standard PGXS infrastructure. For this to wor
 
 Extension can be loaded:
 
-In local session with `LOAD 'pg_sampletolog'`; <br>
+In local session with `LOAD 'pg_logqueryid'`; <br>
 Using `session_preload_libraries` parameter in a specific connection <br>
 At server level with `shared_preload_libraries` <br>
 
