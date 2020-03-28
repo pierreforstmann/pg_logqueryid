@@ -39,7 +39,7 @@ In the current database connection:
 `LOAD` <br>
 
 
-In this setup all SQL statements are auto explained and server log displays:
+In this setup all SQL statements are auto explained and server log displays for current database session:
 
 `2020-03-28 14:47:08.633 CET [19735] LOG:  pg_logqueryid: queryId=5917340101676597114` <br>
 `2020-03-28 14:47:08.633 CET [19735] STATEMENT:  SELECT e.extname AS "Name", e.extversion AS "Version", n.nspname AS "Schema", c.description AS "Description"` <br>
@@ -73,7 +73,7 @@ For this example, queryId can be checked in pg_stat_statements view:
 `----------------------------------------------------------------------------------------------------` <br>
 ` -----------` <br>
  `917340101676597114 | SELECT e.extname AS "Name", e.extversion AS "Version", n.nspname AS "Schema", 
-c.description AS "Description" ` <br>                                                           
+c.description AS "Description" ` <br>                                                      
            `+` <br>
                    ` | FROM pg_catalog.pg_extension e LEFT JOIN pg_catalog.pg_namespace n ON n.oid = 
 e.extnamespace LEFT JOIN pg_catalog.pg_description c ON c.objoid = e.oid AND c.classoid = $1::pg_cata
