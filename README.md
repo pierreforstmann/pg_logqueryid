@@ -18,7 +18,7 @@ Extension can be loaded:
 
 In local session with `LOAD 'pg_logqueryid'`; <br>
 Using `session_preload_libraries` parameter in a specific connection <br>
-At server level with `shared_preload_libraries` <br>
+At server level with `shared_preload_libraries` parameter. <br> 
 
 ## Usage
 pg_logqueryid has no specific GUC.
