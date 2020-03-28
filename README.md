@@ -65,21 +65,20 @@ In this setup all SQL statements are auto explained and server log displays:
 
 For this example, queryId can be checked in pg_stat_statements view:
 
-`
-pierre=# select queryid, query from pg_stat_statements where queryId=5917340101676597114;
-       queryid       |                                                                               
-               query                                                                                 
-             
----------------------+-------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------
--------------
- 5917340101676597114 | SELECT e.extname AS "Name", e.extversion AS "Version", n.nspname AS "Schema", 
-c.description AS "Description"                                                                       
-            +
-                     | FROM pg_catalog.pg_extension e LEFT JOIN pg_catalog.pg_namespace n ON n.oid = 
+
+`pierre=# select queryid, query from pg_stat_statements where queryId=5917340101676597114;` <br>
+       `queryid       |                                                                               ` <br>
+               `query                                                                                 ` <br>
+`--------------------+-------------------------------------------------------------------------------` <br>
+`----------------------------------------------------------------------------------------------------` <br>
+` -----------` <br>
+ `917340101676597114 | SELECT e.extname AS "Name", e.extversion AS "Version", n.nspname AS "Schema", 
+c.description AS "Description" ` <br>                                                           
+           `+` <br>
+                   ` | FROM pg_catalog.pg_extension e LEFT JOIN pg_catalog.pg_namespace n ON n.oid = 
 e.extnamespace LEFT JOIN pg_catalog.pg_description c ON c.objoid = e.oid AND c.classoid = $1::pg_cata
-log.regclass+
-                     | ORDER BY 1
-(1 row)
+log.regclass+` <br>
+                   ` | ORDER BY 1` <br>
+`1 row)`<br>
 `
 
