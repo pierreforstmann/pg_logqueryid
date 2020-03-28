@@ -11,7 +11,7 @@ This module can be built using the standard PGXS infrastructure. For this to wor
 `cd pg_logqueryid` <br>
 `make` <br>
 `make install` <br>
-`
+
 ## PostgreSQL setup
 
 Extension can be loaded:
