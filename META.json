@@ -11,7 +11,6 @@
    "prereqs": {
       "runtime": {
          "requires": {
-            "plpgsql": 0,
             "PostgreSQL": "9.4.26"
          },
          "recommends": {
