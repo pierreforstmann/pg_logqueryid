@@ -20,14 +20,14 @@
    },
    "provides": {
      "pg_queryid": {
-         "abstract": "logs ps_stat_statements queryId for auto_explain",
+         "abstract": "logs pg_stat_statements queryId for auto_explain",
          "file": "pg_logqueryid.c",
          "docfile": "README.md",
          "version": "0.0.1"
       }
    },
    "resources": {
-      "homepage": "http://github.com/pierreforstmann/pg_logqueryid",
+      "homepage": "https://github.com/pierreforstmann/pg_logqueryid",
       "bugtracker": {
          "web": "http://github.com/pierreforstmann/pg_logqueryid/issues"
       },
