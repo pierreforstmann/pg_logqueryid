@@ -11,10 +11,10 @@
    "prereqs": {
       "runtime": {
          "requires": {
-            "PostgreSQL": "9.4.26"
+            "PostgreSQL": "9.4.0"
          },
          "recommends": {
-            "PostgreSQL": "9.5"
+            "PostgreSQL": "9.5.21"
          }
       }
    },
