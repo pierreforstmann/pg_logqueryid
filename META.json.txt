@@ -1,0 +1,23 @@
+{
+   "name": "pg_logqueryid",
+   "abstract": "log pg_stat_statements queryid for auto_explain",
+   "version": "0.0.1",
+   "release_status": "testing",
+   "maintainer": "Pierre Forstmann",
+   "license": "postgresql",
+   "meta-spec": {
+      "version": "0.0.1",
+      "url": "http://pgxn.org/meta/spec.txt"
+   }  
+   "prereqs": { "pg_stat_statements", "auto_explain" },
+   "resources": {
+      "bugtracker": {
+         "web": "http://github.com/pierreforstmann/pg_logquery_id/issues/"
+      },
+      "repository": {
+        "url":  "git://github.com/pierreforstmann/pg_logquery_id/pgl_logquery.git",
+        "web":  "http://github.com/pierreforstmann/pg_logqueryid/",
+        "type": "git"
+      }
+   }
+}
