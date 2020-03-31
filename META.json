@@ -27,7 +27,6 @@
       }
    },
    "resources": {
-      "homepage": "https://github.com/pierreforstmann/pg_logqueryid",
       "bugtracker": {
          "web": "http://github.com/pierreforstmann/pg_logqueryid/issues"
       },
