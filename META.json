@@ -19,7 +19,7 @@
       }
    },
    "provides": {
-     "pg_sampletolog": {
+     "pg_queryid": {
          "abstract": "logs ps_stat_statements queryId for auto_explain",
          "file": "pg_logqueryid.c",
          "docfile": "README.md",
