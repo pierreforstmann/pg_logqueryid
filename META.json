@@ -1,26 +1,49 @@
 {
-	"name": "pg_logqueryid",
-	"abstract": "log pg_stat_statements queryid for auto_explain",
-	"version": "0.0.1",
-	"release_status": "testing",
-	"maintainer": "Pierre Forstmann",
-	"license": "postgresql",
-	"meta-spec": {
-		"version": "0.0.1",
-		"url": "http://pgxn.org/meta/spec.txt"
-	},
-	"prereqs": [
-		"pg_stat_statements",
-		"auto_explain"
-	],
-	"resources": {
-		"bugtracker": {
-			"web": "http://github.com/pierreforstmann/pg_logquery_id/issues/"
-		},
-		"repository": {
-			"url": "git://github.com/pierreforstmann/pg_logquery_id/pgl_logquery.git",
-			"web": "http://github.com/pierreforstmann/pg_logqueryid/",
-			"type": "git"
-		}
-	}
+   "name": "pg_logqueryid",
+   "abstract": "logs pg_stat_statements queryId for auto_explain",
+   "description": "logs pg_stat_statements queryId for auto_explain",
+   "version": "0.0.1",
+   "maintainer": [
+      "Pierre Forstmann"
+   ],
+   "license": {
+      "PostgreSQL": "http://www.postgresql.org/about/licence"
+   },
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "plpgsql": 0,
+            "pg_stat_statements": 0,
+            "auto_explain": 0,
+            "PostgreSQL": "9.4.26"
+         },
+         "recommends": {
+            "PostgreSQL": "9.5"
+         }
+      }
+   },
+   "provides": {
+   },
+   "resources": {
+      "homepage": "http://pgtap.org/",
+      "bugtracker": {
+         "web": "http://github.com/pierreforstmann/pg_logqueryid/issues"
+      },
+      "repository": {
+        "url":  "https://github.com/pierreforstmann/pg_logqueryid.git",
+        "web":  "https://github.com/pierreforstmann/pg_logqueryid",
+        "type": "git"
+      }
+   },
+   "generated_by": "Pierre Forstmann",
+   "meta-spec": {
+      "version": "0.0.1",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+   "tags": [
+      "performance",
+      "pg_stat_statements",
+      "auto_explain",
+      "queryId"
+   ]
 }
