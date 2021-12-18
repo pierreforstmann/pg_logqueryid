@@ -23,8 +23,8 @@ Extension can be loaded:
 3. at server level with `shared_preload_libraries` parameter. <br> 
 
 ## Usage
-pg_logqueryid has no specific GUC.
-To use it pg_stat_statements and auto_explain extensions must be loaded and configured. If this is not the case pg_logqueryid can be loaded but is not enabled.
+`pg_logqueryid` has no specific GUC.
+To use it `pg_stat_statements` and `auto_explain` extensions must be loaded and configured. If this is not the case `pg_logqueryid` can be loaded but is not enabled.
 
 ## Example
 
