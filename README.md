@@ -12,7 +12,7 @@ This module can be built using the standard PGXS infrastructure. For this to wor
 `make` <br>
 `make install` <br>
 
-This extension has been validated with PostgreSQL 9.5, 9.6, 10, 11, 12, 13, 14 and 15.
+This extension has been validated with PostgreSQL 9.5, 9.6, 10, 11, 12, 13, 14, 15 and 16.
 
 ## PostgreSQL setup
 
@@ -25,6 +25,7 @@ Extension can be loaded:
 ## Usage
 `pg_logqueryid` has no specific GUC.
 To use it `pg_stat_statements` and `auto_explain` extensions must be loaded and configured. If this is not the case `pg_logqueryid` can be loaded but is not enabled.
+(parameter `logging_collector` must also be set on to `on`).
 
 ## Example
 
