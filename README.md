@@ -1,6 +1,8 @@
 # pg_logqueryid
 PostgreSQL extension to display pg_stat_statements queryid with auto_explain
 
+Note that in recent PostgreSQL versions, queryId is printed by auto_explain if `auto.explain.log_min_duration` and `auto_explain.log_verbose` are both set.
+
 
 # Installation
 ## Compiling
@@ -12,7 +14,7 @@ This module can be built using the standard PGXS infrastructure. For this to wor
 `make` <br>
 `make install` <br>
 
-This extension has been validated with PostgreSQL 9.5, 9.6, 10, 11, 12, 13, 14, 15 and 16.
+This extension has been validated with PostgreSQL 9.5, 9.6, 10, 11, 12, 13, 14, 15, 16, 17 and 18.
 
 ## PostgreSQL setup
 

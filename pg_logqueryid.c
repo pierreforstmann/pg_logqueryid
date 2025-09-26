@@ -54,7 +54,7 @@ static void pglqi_ExecutorRun(QueryDesc *queryDesc,
 #else
 							 long count
 #endif
-#if PG_VERSION_NUM >= 100000
+#if PG_VERSION_NUM >= 100000 && PG_VERSION_NUM < 180000
 							 ,bool execute_once
 #endif
 );
@@ -178,7 +178,7 @@ pglqi_ExecutorRun(QueryDesc *queryDesc,
 #else
 				 long count
 #endif
-#if PG_VERSION_NUM >= 100000
+#if PG_VERSION_NUM >= 100000 && PG_VERSION_NUM < 180000 
 				 ,bool execute_once
 #endif
 )
@@ -189,13 +189,13 @@ pglqi_ExecutorRun(QueryDesc *queryDesc,
 	PG_TRY();
 	{
 		if (prev_ExecutorRun)
-#if PG_VERSION_NUM >= 100000
+#if PG_VERSION_NUM >= 100000 && PG_VERSION_NUM < 180000
 			prev_ExecutorRun(queryDesc, direction, count, execute_once);
 #else
 			prev_ExecutorRun(queryDesc, direction, count);
 #endif
 		else
-#if PG_VERSION_NUM >= 100000
+#if PG_VERSION_NUM >= 100000 && PG_VERSION_NUM < 180000
 			standard_ExecutorRun(queryDesc, direction, count, execute_once);
 #else
 			standard_ExecutorRun(queryDesc, direction, count);
