@@ -1,7 +1,7 @@
 # pg_logqueryid
-PostgreSQL extension to display pg_stat_statements queryid with auto_explain
+PostgreSQL extension to display pg_stat_statements queryid with auto_explain.
 
-Note that in recent PostgreSQL versions, queryId is printed by auto_explain if `auto.explain.log_min_duration` and `auto_explain.log_verbose` are both set.
+Note that in recent PostgreSQL versions, queryId is printed by auto_explain if `auto.explain.log_min_duration` is set and `auto_explain.log_verbose` is set to true.
 
 
 # Installation
